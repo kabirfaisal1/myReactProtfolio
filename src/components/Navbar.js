@@ -6,17 +6,14 @@ import logo from "../assets/images/avatar.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+// import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
+ 
   AiOutlineAim,
-  AiOutlineAreaChart,
-  AiOutlineConsoleSql,
-  AiOutlineMonitor,
-  AiOutlineSnippets,
+  
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -70,7 +67,6 @@ function NavBar() {
                 to="/skills"
                 onClick={() => updateExpanded(false)}
               >
-                {/* AiOutlineSnippets AiOutlineAim , AiOutlineAreaChart*/}
                 <AiOutlineAim style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
             </Nav.Item>
