@@ -1,48 +1,49 @@
 import React from "react";
-// import { Container, Row, Col } from "react-bootstrap";
-// import Home2 from "./Home2";
+import { Container, Row, Col } from "react-bootstrap";
+import homeLogo from "../../assets/images/MyPhoto.png";
+import Particle from "../Particle";
+import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
-    return (
-        <section>
-           <div class="container mt-4" id="mainContainer">
-                <h2 class="display-4 mb-4" id="name">
-                    <span id="greeting">Hi, I am</span> Kabir Faisal
-                    <small class="d-block text-muted" id="job-positions">
-                    <Type /></small>
-                </h2>
-                <div class="row mb-4">
-                    <div class="col mb-4 mb-lg-0">
-                        <img class="img-fluid img-thumbnail rounded-circle
-                            border border-success" id="myimg"
-                            src="assets/images/MyPhoto.png" alt="my photo"/>
-                    </div>
-                    <div class="col-6">
-                        <h3 class="display-4 mb-4" id="aboutMe">Who I am</h3>
-                        <p>
-                            I am a quality engineer and web-developer with a
-                            passion for building clean, stream-lined, responsive
-                            websites and apps.
-                            With a technical background in the various industry,
-                            including more than 10 years as a QA Engineer, I
-                            have an abundance
-                            of experience working with a diverse base of
-                            start-up, midsize corporate entities.
-                        </p>
-                        <p>
-                            I have a history of solving problems and creating
-                            efficient solutions all while being both
-                            self-reliant and a member of a team. I recently
-                            received a certificate in Full-Stack Web Development
-                            from the Columbia | Engineering Boot Camp.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  return (
+    <section>
+      <Container fluid className="home-section" id="home">
+        <Particle />
+        <Container className="home-content">
+          <Row>
+            <Col md={7} className="home-header">
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                hello Friends{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
 
-    );
+              <h1 className="heading-name">
+                I'M
+                <strong className="main-name"> Kabir Faisal</strong>
+              </h1>
+
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
+            </Col>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Home2 />
+    </section>
+  );
 }
 
 export default Home;

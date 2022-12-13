@@ -32,7 +32,7 @@ html {
     transition: transform 200ms ease-in-out;
   }
 
-  #aboutMe{
+  #skillsMe{
     margin-top: 30px;
     padding-top: 30px;
     margin-right: 5px;
@@ -41,11 +41,11 @@ html {
     text-align: center;
   }
 
-  #mySkillContainer{
+  #myskillsContainer{
     background-color: #B4CDE6;
     text-align: center;
   }
-  #mainContainer,#mySkillContainer,#contactContainer,#myExperience,.card-body,#cardHeader{
+  #mainContainer,#myskillsContainer,#contactContainer,#myExperience,.card-body,#cardHeader{
     border-radius: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
