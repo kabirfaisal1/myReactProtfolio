@@ -40,7 +40,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand data-test-id="app-logo" href="/" className="d-flex">
           <img src={logo}  width="80" height="80" className="navbar-brand" alt="myLogo" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -56,15 +56,19 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link 
+                data-test-id="nav-home"
+                as={Link} to="/" 
+                onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
+                data-test-id="nav-skills"
                 as={Link}
-                to="/skills"
+                to="/Skills"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineAim style={{ marginBottom: "2px" }} /> Skills
@@ -73,6 +77,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                data-test-id="nav-project"
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
@@ -86,6 +91,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                data-test-id="nav-resume"
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
@@ -97,6 +103,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
+                data-test-id="nav-gitHub-link"
                 href="https://github.com/kabirfaisal1/myReactProtfolio.git"
                 target="_blank"
                 className="fork-btn-inner"
