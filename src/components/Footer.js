@@ -1,11 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import {AiFillGithub,AiFillLinkedin} from "react-icons/ai";
 
 function Footer() {
   let date = new Date();
@@ -31,14 +26,13 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
-                       <li className="social-icons">
+            <li className="social-icons">
               <a
                 href="www.linkedin.com/in/kabirfaisal89"
                 style={{ color: "white" }}
                 target="_blank" 
-               
               >
-                <FaLinkedinIn />
+                <AiFillLinkedin />
               </a>
             </li>
           

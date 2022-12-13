@@ -36,6 +36,7 @@ NOTE: if you are copying this repo all you have to do is run
     6. npm i react-css-components
     7. npm react-parallax-tilt
     8. npm i react-tsparticles  
+    9. npm i react-github-calendar
 
     Test:
     1. npm i cypress
