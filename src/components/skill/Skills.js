@@ -32,7 +32,10 @@ function Skills() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="skill-img"
           >
-            <img src={Origami} alt="skill" className="img-fluid" />
+            <img src={Origami} 
+              alt="skill" 
+              className="img-fluid"
+              style={{ maxHeight: "450px" }}/>
           </Col>
         </Row>
         <h1 className="project-heading">
