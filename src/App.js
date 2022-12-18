@@ -12,7 +12,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  //Navigate
+  Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -41,7 +41,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/resume" element={<Resume />} />
-          {/* <Route path="*" element={<Navigate to="/"/>} /> */}
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
