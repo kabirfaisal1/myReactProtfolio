@@ -6,10 +6,10 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container data-test-id="portfolio-footer" fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Kabir Faisal: Protfolio</h3>
+          <h3>Kabir Faisal: Portfolio</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} FK</h3>

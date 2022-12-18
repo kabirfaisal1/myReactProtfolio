@@ -13,25 +13,26 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 data-test-id="homepage-header-greeting" style={{ paddingBottom: 15 }} className="heading">
                 hello Friends{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 data-test-id="homepage-header-for-name" className="heading-name">
                 I'M
                 <strong className="main-name"> Kabir Faisal</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div data-test-id="homepage-typeWriter" style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col  md={5} style={{ paddingBottom: 20 }}>
               <img
+                data-test-id="my-homepage-pic"
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"

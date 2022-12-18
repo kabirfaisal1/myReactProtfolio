@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from 'react-bootstrap'
 import { SiCsharp, SiMysql,
   SiCypress,SiSelenium, SiJava, SiJavascript,
-  SiMongodb, SiGit,SiReact } from "react-icons/si";
+  SiMongodb, SiGraphql,SiReact } from "react-icons/si";
 import {
   DiNodejs,
 } from "react-icons/di";
@@ -31,9 +31,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiMysql />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiGit />
-      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGraphql />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiCypress />
       </Col>
