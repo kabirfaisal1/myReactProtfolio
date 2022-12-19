@@ -6,7 +6,8 @@ import logo from "../assets/images/avatar.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-// import { ImBlog } from "react-icons/im";
+import Home from "./home/Home";
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -40,7 +41,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand data-test-id="app-logo" href="/" className="d-flex">
+        <Navbar.Brand data-test-id="app-logo" className="d-flex">
           <img src={logo}  width="80" height="80" className="navbar-brand" alt="myLogo" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -58,7 +59,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link 
                 data-test-id="nav-home"
-                as={Link} to="/" 
+                as={Link} to={"/"} 
                 onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>

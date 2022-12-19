@@ -63,7 +63,7 @@ function Home2 () {
               <li className='social-icons'>
                 <a
                    data-test-id="connect-via-linkedin"
-                  href='www.linkedin.com/in/kabirfaisal89'
+                  href='http://www.linkedin.com/in/kabirfaisal89'
                   target='_blank'
                   rel='noreferrer'
                   className='icon-colour  home-social-icons'
