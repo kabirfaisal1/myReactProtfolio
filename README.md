@@ -69,7 +69,8 @@ NOTE: if you are copying this repo all you have to do is run
     7. npm react-parallax-tilt
     8. npm i react-tsparticles  
     9. npm i react-github-calendar
-    10. npm i react-pdf
+    10.npm i react-pdf
+    11.npm i hash-router
 
     Test:
     1. npm i cypress (TO-DO)

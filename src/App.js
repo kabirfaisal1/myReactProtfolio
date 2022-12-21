@@ -7,9 +7,9 @@ import Skills from "./components/skill/Skills";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/resume/Resume";
-
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
@@ -33,7 +33,6 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-    
       <div className="App" id={load ? "no-scroll" : "scroll"}>
          <Navbar />
        <ScrollToTop />
