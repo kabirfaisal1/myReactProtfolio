@@ -76,3 +76,9 @@ NOTE: if you are copying this repo all you have to do is run
     1. npm i cypress (TO-DO)
 
 ```
+
+## [Screenshots](#table-of-contents)
+### Desktop
+![Image at home page](/screenshots/desktop.png)
+### Mobile
+![Image at home page](/screenshots/mobile.png)
