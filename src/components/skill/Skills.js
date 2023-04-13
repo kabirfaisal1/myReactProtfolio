@@ -9,9 +9,10 @@ import Toolstack from "./Toolstack";
 
 function Skills() {
   return (
+    <div style={{ fontSize: 'large' }}>
     <Container fluid className="about-section">
-      <Particle />
-      <Container>
+    
+  
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={5}
@@ -22,7 +23,7 @@ function Skills() {
               color:"white"
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 className="project-heading"style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Skills and <strong className="purple">Hobbies</strong>
             </h1>
             <Skillcard />
@@ -50,8 +51,9 @@ function Skills() {
         <Toolstack />
 
       <Github /> 
-      </Container>
+  
     </Container>
+    </div>
   );
 }
 

@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import myAvtar from '../../assets/images/MyAvtar.png'
+import certificate from '../../assets/images/certificate.png'
+
 import Tilt from 'react-parallax-tilt'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
@@ -15,6 +17,7 @@ function Home2 () {
             <h1  style={{ fontSize: '2.6em' }}>
               LET ME <span className='purple'> INTRODUCE </span> MYSELF
             </h1>
+            
             <p>
               I am a quality engineer and web-developer with a passion for
               building clean, stream-lined, responsive websites and apps. With a
@@ -30,7 +33,8 @@ function Home2 () {
               Development from the Columbia | Engineering Boot Camp.
             </p>
           </Col>
-          <Col data-test-id="home-page-avtar" md={4} id='myAvtar'>
+         
+          <Col data-test-id="home-page-avtar" md={2} id='myAvtar'>
             <Tilt>
               <img
                 src={myAvtar}
@@ -41,6 +45,7 @@ function Home2 () {
               />
             </Tilt>
           </Col>
+         
         </Row>
         <Row>
           <Col md={12} className='home-skills-social'>
