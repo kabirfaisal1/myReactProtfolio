@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card data-test-id={props.title} className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={props.imgPath} alt={props.alt} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
@@ -19,7 +19,7 @@ function ProjectCards(props) {
         </Button>
         {"\n"}
         {"\n"}
-        {!props.isBlog && props.siteLink && (
+        {props.siteLink &&(
           <Button
             variant="primary"
             href={props.siteLink}
