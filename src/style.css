@@ -504,6 +504,7 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+  margin: 100px !important;
 }
 
 /* --------- */
@@ -712,6 +713,8 @@ button:focus {
 
 #mainContainer{
   background-color: #C7F2A4;
+  margin: 20px;
+  padding: 10px;
   
 }
 
