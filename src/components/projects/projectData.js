@@ -57,8 +57,8 @@ const cardContact = {
       title: "Password Generator",
       img: "https://1password.com/img/redesign/password-generator/laptop.84e23294b9912d010a39b02321119b98.svg",
       description: "Working on a application that generated a random password based user-selected criteria. The app runs in the browser and features dynamically updated HTML and CSS powered by your JavaScript code. It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.",
-      siteLink: "https://kabirfaisal1.github.io/JavaScriptQuiz/",
-      ghLink: "https://github.com/kabirfaisal1/JavaScriptQuiz.git"
+      siteLink: "https://kabirfaisal1.github.io/PasswordGenerater/",
+      ghLink: "https://github.com/kabirfaisal1/PasswordGenerater.git"
     },
     {
       id: "8",
