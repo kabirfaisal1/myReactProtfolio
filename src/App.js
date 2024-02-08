@@ -40,7 +40,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
+          {/* <Route path="/resume" element={<Resume />} /> TODO: will reenable later*/}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
