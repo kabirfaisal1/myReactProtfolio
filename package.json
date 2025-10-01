@@ -1,6 +1,6 @@
 {
-  "homepage": "http://kabirfaisal1.github.io/myReactProtfolio",
-  "name": "My React Portfolio",
+  "homepage": "https://kabirfaisal1.github.io/myReactProtfolio/#/",
+  "name": "MyReactPortfolio",
   "version": "2.1.0",
   "private": true,
   "dependencies": {

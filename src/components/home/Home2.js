@@ -9,20 +9,27 @@ import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
 
 function Home2 () {
+  // Calculate months from 02/2016 to now
+  const startDate = new Date(2016, 1); // Month is 0-indexed, so 1 = February
+  const now = new Date();
+  const years = now.getFullYear() - startDate.getFullYear();
+  const months = now.getMonth() - startDate.getMonth();
+  const totalMonths = years * 12 + months;
+
   return (
     <Container fluid className='home-skills-section' id='skills'>
       <Container>
         <Row>
           <Col data-test-id="home-page-introduce" md={8} className='home-skills-description'>
-            <h1  style={{ fontSize: '2.6em' }}>
+            <h1 style={{ fontSize: '2.6em' }}>
               LET ME <span className='purple'> INTRODUCE </span> MYSELF
             </h1>
-            
             <p>
               I am a quality engineer and web-developer with a passion for
               building clean, stream-lined, responsive websites and apps. With a
               technical background in the various industry, including more than
-              10 years as a QA Engineer, I have an abundance of experience
+              {` ${totalMonths} months `}
+              as a QA Engineer, I have an abundance of experience
               working with a diverse base of start-up, midsize corporate
               entities.
             </p>
@@ -33,7 +40,6 @@ function Home2 () {
               Development from the Columbia | Engineering Boot Camp.
             </p>
           </Col>
-         
           <Col data-test-id="home-page-avtar" md={2} id='myAvtar'>
             <Tilt>
               <img
@@ -45,7 +51,6 @@ function Home2 () {
               />
             </Tilt>
           </Col>
-         
         </Row>
         <Row>
           <Col md={12} className='home-skills-social'>
@@ -54,7 +59,7 @@ function Home2 () {
               Feel free to <span className='purple'>connect </span>with me
             </p>
             <ul className='home-skills-social-links'>
-              <li data-test-id= "connect-via-icons" className='social-icons'>
+              <li data-test-id="connect-via-icons" className='social-icons'>
                 <a
                   data-test-id="connect-via-gitHub"
                   href='https://github.com/kabirfaisal1'
@@ -67,7 +72,7 @@ function Home2 () {
               </li>
               <li className='social-icons'>
                 <a
-                   data-test-id="connect-via-linkedin"
+                  data-test-id="connect-via-linkedin"
                   href='http://www.linkedin.com/in/kabirfaisal89'
                   target='_blank'
                   rel='noreferrer'
