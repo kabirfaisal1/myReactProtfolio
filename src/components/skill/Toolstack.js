@@ -8,7 +8,7 @@ import
   SiGithubactions,
   SiInsomnia,
   SiJira,
-  SiK6,
+
   SiSelenium,
   SiCypress,
 } from "react-icons/si";
@@ -16,7 +16,7 @@ import { TbBrandPowershell } from "react-icons/tb";
 import { VscVscode, VscAzureDevops } from "react-icons/vsc";
 import { FaAmazon } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
-
+import { SiK6 } from 'react-icons/si';
 function Toolstack ()
 {
   const ICON_SIZE = 48; // tweak if you want larger/smaller icons
