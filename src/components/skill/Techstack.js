@@ -9,8 +9,7 @@ import
   SiGraphql,
   SiReact,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa6";
-
+import { FaJava } from 'react-icons/fa';
 function Techstack ()
 {
   const ICON_SIZE = 48; // consistent size
